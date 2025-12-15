@@ -1,0 +1,39 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color:#111;
+    color: white;
+    
+
+}
+section{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
