@@ -29,6 +29,7 @@ section{
     border: 2px solid red;
     border-radius: 12px;
     overflow: hidden;
+    margin-top: 22px;
 }
 
 .box img{
@@ -36,4 +37,7 @@ section{
     width: 100%;
     object-fit: cover;
     
+}
+.box:active{
+    scale: 0.96;
 }
