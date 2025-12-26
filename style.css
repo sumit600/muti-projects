@@ -1,7 +1,24 @@
+:root{
+    --primary :#F5EFFF;
+    --sec: #E5D9F2;
+    --tri:#CDC1FF;
+    --four:#A294F9;
+
+}
+@font-face {
+    font-family: regular;
+    src: url(./fonnts.com-Aeonik-Regular.ttf);
+}
+@font-face {
+    font-family: bold;
+    src: url(./fonnts.com-Aeonik-Bold.ttf);
+}
 * {
 margin: 0px;
 padding: 0px;
 box-sizing: border-box;
+color:  #1F2937;
+font-family: regular;
 }
 
 html,
@@ -13,31 +30,75 @@ width: 100%;
 main{
     height: 100%;
     width: 100%;
-    background-color:#111;
-    color: white;
-    
+    background-color: var(--primary);
+}
 
+h1{
+    font-family: bold;
 }
+
+nav{
+    height: 8%;
+    width: 100%;
+    background-color: var(--four);
+}
+nav h1{
+    text-align: center;
+}
+
 section{
+    height: 90vh;
+    width: 100vw;
     display: flex;
-    gap: 12px;
+    gap: 22px;
     justify-content: center;
+    margin-top: 12px;
+    position: absolute;
 }
-.box{
+
+.elem{
     height: 300px;
-    width: 300px;
-    border: 2px solid red;
+    width: 260px;
+    background: var(--tri);
     border-radius: 12px;
     overflow: hidden;
-    margin-top: 22px;
+    position: relative;
+    transition: all ease 0.2s;
+    
 }
-
-.box img{
+.elem:active{
+    scale: 0.97;
+}
+.elem img{
     height: 100%;
     width: 100%;
     object-fit: cover;
-    
 }
-.box:active{
-    scale: 0.96;
+.elem h2{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.fullPage{
+    height: 90vh;
+    width: 100%;
+    background: var(--primary);
+    display: none;
+    position: absolute;
+}
+
+.back{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 26px;
+    background: var(--tri);
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    text-align: center;
+    box-shadow: 0px 0px 10px var(--four);
+}
+.back:active{
+    scale: 0.97;
 }

@@ -1,7 +1,9 @@
-let box = document.querySelectorAll(".box")
 
+let elem = document.querySelectorAll('.elem')
 
-box.forEach(function(elem){
-    console.log(elem);
-    
+elem.forEach(function(elem){
+    elem.addEventListener("click",function(){
+        document.querySelectorAll(".fullPage")[elem.id].style.display = "block"
+    })
 })
+
