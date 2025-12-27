@@ -94,11 +94,94 @@ section{
     font-size: 26px;
     background: var(--tri);
     position: absolute;
-    top: 5%;
-    left: 3%;
+    top: 4%;
+    left: 2%;
     text-align: center;
-    box-shadow: 0px 0px 10px var(--four);
+    box-shadow: 0px 0px 8px var(--four);
 }
 .back:active{
     scale: 0.97;
+}
+
+.todo-page{
+    display: block;
+}
+
+
+
+.todo-container{
+    margin: 0 auto;
+    margin-top: 3%;
+    border-radius: 12px;
+    height: 90%;
+    width: 90%;
+    
+    display: flex;
+    gap: 12px;
+    overflow: hidden;
+}
+.todo-container .todo-left{
+    background: var(--tri);
+    height: 100%;
+    width: 30%;
+   border-radius: 12px;
+    
+   
+}
+.todo-form{
+    display: flex;
+    flex-direction: column;
+    padding: 23px;
+    
+}
+.todo-form input{
+    margin: 12px;
+    padding: 13px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+.todo-form textarea{
+    margin: 12px;
+    padding:13px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.todo-form button{
+    margin: 12px;
+    padding: 12px 0 ;
+    border-radius: 12px;
+    border: none;
+
+    
+}
+
+.todo-container .todo-right{
+    background: var(--tri);
+    height: 100%;
+    width: 70%;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 22px;
+    align-content: start;
+    gap: 12px;
+
+}
+
+
+.right-card{
+    height: 32%;
+    width: 30%;
+    background: var(--four);
+    border-radius: 12px;
+    padding: 12px;
+    position: relative;
+}
+.right-card button{
+    position: absolute;
+    bottom: 5px;
+    
 }
