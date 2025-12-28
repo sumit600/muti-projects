@@ -180,8 +180,43 @@ section{
     padding: 12px;
     position: relative;
 }
+
+.right-card h2{
+    text-transform: capitalize;
+}
+.right-card h3 {
+    margin-top: 12px;
+    font-size: 16px;
+}
 .right-card button{
     position: absolute;
-    bottom: 5px;
+    bottom: 10%;
+    padding: 6px 12px ;
+    border-radius: 12px;
+    border: none;
+    background: var(--sec);
+    
     
 }
+.right-card button:active{
+    scale: 0.9;
+}
+
+.todo-imp{
+    display: flex;
+    align-items: center;
+}
+.todo-imp input{
+    scale: 1.5;
+}
+.class-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.class-top p{
+    font-size: 10px;
+
+}
+
