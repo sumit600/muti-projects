@@ -213,4 +213,55 @@ section{
     font-size: 10px;
 
 }
+.planner-page{
+    display: block;
+    
+}
+.planner-page h2{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 12px;
+}
 
+.planner-container{
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    background-color: var(--tri);
+    margin-top: 12px;
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    overflow: auto;
+    
+    
+}
+.planner-container::-webkit-scrollbar{
+    display: none;
+}
+.planner-task{
+    position: relative;  
+    width: 50%;
+    margin-top: 12px;
+}
+.planner-container input{
+    width: 90%;
+    height: 10%;
+    border-radius: 12px;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    outline: none;
+    padding: 12px;
+    
+    
+}
+
+.planner-container h3{
+    position: absolute;
+    top: 1%;
+    left: 2%;
+    font-size: 12px;
+}

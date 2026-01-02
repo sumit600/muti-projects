@@ -20,7 +20,8 @@ backbtn.forEach(function(elem){
 
 openFeature()
 
-let todoForm = document.querySelector(".todo-form")
+function todo(){
+    let todoForm = document.querySelector(".todo-form")
 let input = document.querySelector(".todo-form input")
 let checkbox = document.querySelector(".todo-imp input")
 let textarea = document.querySelector(".todo-form textarea")
@@ -85,6 +86,9 @@ todoForm.addEventListener('submit',function(e){
     
     
 })
+}
+
+todo()
 
 
 
